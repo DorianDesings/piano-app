@@ -8,6 +8,7 @@
 		"format": "prettier --write .",
 		"lint": "eslint . --ext .js,.jsx --fix"
 	},
+	"type": "module",
 	"dependencies": {
 		"react": "18.2.0",
 		"react-dom": "18.2.0",

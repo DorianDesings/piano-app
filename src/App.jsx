@@ -1,5 +1,15 @@
+import { useState } from 'react';
+import { GlobalStyles } from './styles/GlobalStyles';
+import Piano from './components/piano/Piano';
+
 const App = () => {
-	return <h1>Nucleo de la aplicación</h1>;
+	const [showNotes, setShowNotes] = useState(true);
+	return (
+		<>
+			<GlobalStyles />
+			<Piano showNotes={showNotes} />
+		</>
+	);
 };
 
 export default App;
